@@ -1,1 +1,1 @@
-https://lerababydova.github.io/rsschool-cv/cv
+https://lerababydova.github.io/rsschool-cv/
