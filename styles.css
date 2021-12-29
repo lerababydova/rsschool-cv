@@ -17,6 +17,8 @@ a {
 }
 
 .header {
+  position: fixed;
+  top: 0;
   box-shadow: 0px 1px 5px 0 #dddddd;
   background-color: white;
 }
@@ -56,7 +58,7 @@ a {
   display: flex;
   align-items: flex-start;
   max-width: 1150px;
-  margin: 70px auto;
+  margin: 100px auto 70px;
 }
 
 .contacts-section {
@@ -109,11 +111,33 @@ a {
   box-shadow: 0px 16px 25px 1px #dddddd;
 }
 
+.cv-section-title-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #ef7e45;
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.cv-section-title-wrapper > .material-icons {
+  margin-right: 10px;
+}
+
 .section-title {
   font-weight: 500;
   font-size: 20px;
+  margin: 0;
 }
+
+.text-info {
+}
+
 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
   height: 50px;
   background-color: #eaeaea;
 }
@@ -122,4 +146,15 @@ a {
   height: 45px;
   margin: 2px;
   padding: 5px;
+}
+
+.code-example {
+  background-color: #ededed;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 3px 4px 0 #b9b9b9;
+}
+
+.my-github {
+  text-decoration: none;
 }

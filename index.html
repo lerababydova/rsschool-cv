@@ -11,15 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <title>CV</title>
   </head>
   <body>
     <header class="header">
       <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#contacts" class="nav-link">Contacts</a>
-          </li>
           <li class="nav-item">
             <a href="#aboutme" class="nav-link">About me</a>
           </li>
@@ -36,7 +38,7 @@
             <a href="#education" class="nav-link">Education</a>
           </li>
           <li class="nav-item">
-            <a href="#languges" class="nav-link">Languages</a>
+            <a href="#languages" class="nav-link">Languages</a>
           </li>
         </ul>
       </nav>
@@ -87,22 +89,31 @@
             </li>
           </ul>
         </section>
-        <section class="cv-section">
-          <h2 class="section-title">About me</h2>
+        <div class="cv-section">
+          <div class="cv-section-title-wrapper">
+            <span class="material-icons">person</span>
+            <h2 id="aboutme" class="section-title">About me</h2>
+          </div>
           <p class="text-info">
             I am 22 years old. My previous job was SEO-specialist. At the
             moment, my goal is to become a front-end developer. I am a reliable
             and responsible person with a good sense of humor. I want to get
             enough knowledge in web-development for employment.
           </p>
-          <h2 class="section-title">Skills</h2>
+          <div class="cv-section-title-wrapper">
+            <span class="material-icons">task_alt</span>
+            <h2 id="skills" class="section-title">Skills</h2>
+          </div>
           <ul class="skills-list">
             <li class="skills-item">HTML</li>
             <li class="skills-item">CSS</li>
             <li class="skills-item">JavaScript(in process)</li>
             <li class="skills-item">SEO</li>
           </ul>
-          <h2 class="section-title">Code example</h2>
+          <div class="cv-section-title-wrapper">
+            <span class="material-icons"> integration_instructions </span>
+            <h2 id="codeexample" class="section-title">Code example</h2>
+          </div>
           <pre class="code-example">
 function sumInput () {
             let numbers = [];
@@ -124,12 +135,18 @@ function sumInput () {
         alert( sumInput() );
         </pre
           >
-          <h2 class="section-title" id="experience">Experience</h2>
+          <div class="cv-section-title-wrapper">
+            <span class="material-icons"> card_travel </span>
+            <h2 id="experience" class="section-title">Experience</h2>
+          </div>
           <ul class="exp-list">
             <li class="exp-item">HTML, CSS, JS - couple of months</li>
             <li class="exp-item">Seo-specialist - 1 year</li>
           </ul>
-          <h2 class="section-title">Education</h2>
+          <div class="cv-section-title-wrapper">
+            <span class="material-icons"> school </span>
+            <h2 id="education" class="section-title">Education</h2>
+          </div>
           <ul class="education-list">
             <li class="education-item">
               University: Belarusian State Economical University -
@@ -140,15 +157,25 @@ function sumInput () {
               optimization; Fructcode: basic HTML,CSS
             </li>
           </ul>
-          <h2 class="section-title">Languages</h2>
+          <div class="cv-section-title-wrapper">
+            <span class="material-icons"> language </span>
+            <h2 id="languages" class="section-title">Languages</h2>
+          </div>
           <ul class="lang-list">
             <li class="lang-item">Russian - native speaker</li>
             <li class="lang-item">English - B1 level</li>
           </ul>
-        </section>
+        </div>
       </div>
     </main>
     <footer class="footer">
+      <a
+        class="my-github"
+        href="https://github.com/lerababydova"
+        target="_blank"
+        >Visit my GitHub</a
+      >
+      <p class="date">© 2021</p>
       <a href="https://rs.school/js/"
         ><img
           class="logo"
