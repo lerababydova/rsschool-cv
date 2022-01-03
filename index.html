@@ -4,9 +4,184 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>CV</title>
   </head>
   <body>
-    <h1 class="name_surname">Valeria Babydova</h1>
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#aboutme" class="nav-link">About me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#codeexample" class="nav-link">Code example</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experiences</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#languages" class="nav-link">Languages</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="main-container">
+        <section class="contacts-section">
+          <img
+            class="profile-pic"
+            src="./images/profile-pic.png"
+            alt="profile picture"
+          />
+          <h2 class="contacts-name">Valeria Babydova</h2>
+
+          <ul class="contacts-info">
+            <li class="contacts-info-item">
+              <img
+                class="contacts-icons"
+                src="images/location pic.png"
+                alt="location icon"
+              />
+              Minsk, Belarus
+            </li>
+            <li class="contacts-info-item">
+              <img
+                class="contacts-icons"
+                src="images/email pic.png"
+                alt="email icon"
+              />
+              <a href="mailto:babydova.2011@gmail.com"
+                >babydova.2011@gmail.com</a
+              >
+            </li>
+            <li class="contacts-info-item">
+              <img
+                class="contacts-icons"
+                src="images/github pic.png"
+                alt="github icon"
+              />
+              lerababydova
+            </li>
+            <li class="contacts-info-item">
+              <img
+                class="contacts-icons"
+                src="images/phone pic.png"
+                alt="phone icon"
+              />+375 29 899-86-07
+            </li>
+          </ul>
+        </section>
+        <div class="cv-section">
+          <div class="cv-section-title-wrapper">
+            <span class="material-icons">person</span>
+            <h2 id="aboutme" class="section-title">About me</h2>
+          </div>
+          <p class="text-info">
+            I am 22 years old. My previous job was SEO-specialist. At the
+            moment, my goal is to become a front-end developer. I am a reliable
+            and responsible person with a good sense of humor. I want to get
+            enough knowledge in web-development for employment.
+          </p>
+          <div class="cv-section-title-wrapper">
+            <span class="material-icons">task_alt</span>
+            <h2 id="skills" class="section-title">Skills</h2>
+          </div>
+          <ul class="skills-list">
+            <li class="skills-item">HTML</li>
+            <li class="skills-item">CSS</li>
+            <li class="skills-item">JavaScript(in process)</li>
+            <li class="skills-item">SEO</li>
+          </ul>
+          <div class="cv-section-title-wrapper">
+            <span class="material-icons"> integration_instructions </span>
+            <h2 id="codeexample" class="section-title">Code example</h2>
+          </div>
+          <pre class="code-example">
+function sumInput () {
+            let numbers = [];
+        
+            while (true) {
+                let value = prompt('Введите число', 0);
+                if (value === "" || value === null || !isFinite(value)) break;
+        
+                numbers.push(+value);
+            }
+        
+            let sum = 0;
+            for (let number of numbers) {
+              sum += number;
+            }
+            return sum;
+        }
+        
+        alert( sumInput() );
+        </pre
+          >
+          <div class="cv-section-title-wrapper">
+            <span class="material-icons"> card_travel </span>
+            <h2 id="experience" class="section-title">Experience</h2>
+          </div>
+          <ul class="exp-list">
+            <li class="exp-item">HTML, CSS, JS - couple of months</li>
+            <li class="exp-item">Seo-specialist - 1 year</li>
+          </ul>
+          <div class="cv-section-title-wrapper">
+            <span class="material-icons"> school </span>
+            <h2 id="education" class="section-title">Education</h2>
+          </div>
+          <ul class="education-list">
+            <li class="education-item">
+              University: Belarusian State Economical University -
+              marketer-economist;
+            </li>
+            <li class="education-item">
+              Courses: SEO-courses: basic knowledge of search engine
+              optimization; Fructcode: basic HTML,CSS
+            </li>
+          </ul>
+          <div class="cv-section-title-wrapper">
+            <span class="material-icons"> language </span>
+            <h2 id="languages" class="section-title">Languages</h2>
+          </div>
+          <ul class="lang-list">
+            <li class="lang-item">Russian - native speaker</li>
+            <li class="lang-item">English - B1 level</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <a
+        class="my-github"
+        href="https://github.com/lerababydova"
+        target="_blank"
+        >Visit my GitHub</a
+      >
+      <p class="date">© 2021</p>
+      <a href="https://rs.school/js/"
+        ><img
+          class="logo"
+          src="https://rs.school/images/rs_school_js.svg"
+          alt="rss logo"
+      /></a>
+    </footer>
   </body>
 </html>
