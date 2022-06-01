@@ -60,7 +60,7 @@
                 src="images/location pic.png"
                 alt="location icon"
               />
-              Minsk, Belarus
+              Tbilisi, Georgia
             </li>
             <li class="contacts-info-item">
               <img
@@ -68,7 +68,9 @@
                 src="images/email pic.png"
                 alt="email icon"
               />
-              <a href="mailto:babydova.2011@gmail.com"
+              <a
+                class="contacts-icon-email-link"
+                href="mailto:babydova.2011@gmail.com"
                 >babydova.2011@gmail.com</a
               >
             </li>
@@ -85,7 +87,11 @@
                 class="contacts-icons"
                 src="images/phone pic.png"
                 alt="phone icon"
-              />+375 29 899-86-07
+              />
+
+              <a class="contacts-icon-phone-link" href="tel:+995 598 793 442"
+                >+995 598 793 442</a
+              >
             </li>
           </ul>
         </section>
@@ -112,29 +118,40 @@
           </ul>
           <div class="cv-section-title-wrapper">
             <span class="material-icons"> integration_instructions </span>
-            <h2 id="codeexample" class="section-title">Code example</h2>
+            <h2 id="codeexample" class="section-title">Projects</h2>
           </div>
-          <pre class="code-example">
-function sumInput () {
-            let numbers = [];
-        
-            while (true) {
-                let value = prompt('Введите число', 0);
-                if (value === "" || value === null || !isFinite(value)) break;
-        
-                numbers.push(+value);
-            }
-        
-            let sum = 0;
-            for (let number of numbers) {
-              sum += number;
-            }
-            return sum;
-        }
-        
-        alert( sumInput() );
-        </pre
-          >
+          <div class="projects">
+            <ul class="projects-list">
+              <li class="projects-item">
+                <a
+                  class="projects-item-link"
+                  href="https://rolling-scopes-school.github.io/lerababydova-JSFEPRESCHOOL/portfolio/"
+                  >https://rolling-scopes-school.github.io/lerababydova-JSFEPRESCHOOL/portfolio/</a
+                >
+              </li>
+              <li class="projects-item">
+                <a
+                  class="projects-item-link"
+                  href="https://rolling-scopes-school.github.io/lerababydova-JSFEPRESCHOOL/eco-sounds/"
+                  >https://rolling-scopes-school.github.io/lerababydova-JSFEPRESCHOOL/eco-sounds/</a
+                >
+              </li>
+              <li class="projects-item">
+                <a
+                  class="projects-item-link"
+                  href="https://rolling-scopes-school.github.io/lerababydova-JSFEPRESCHOOL/random-jokes/"
+                  >https://rolling-scopes-school.github.io/lerababydova-JSFEPRESCHOOL/random-jokes/</a
+                >
+              </li>
+              <li class="projects-item">
+                <a
+                  class="projects-item-link"
+                  href="https://rolling-scopes-school.github.io/lerababydova-JSFE2022Q1/shelter/"
+                  >https://rolling-scopes-school.github.io/lerababydova-JSFE2022Q1/shelter/</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="cv-section-title-wrapper">
             <span class="material-icons"> card_travel </span>
             <h2 id="experience" class="section-title">Experience</h2>
@@ -154,8 +171,10 @@ function sumInput () {
             </li>
             <li class="education-item">
               Courses: SEO-courses: basic knowledge of search engine
-              optimization; Fructcode: basic HTML,CSS
+              optimization;
             </li>
+            <li class="education-item">Fructcode: basic HTML,CSS</li>
+            <li class="education-item">Rolling scopes school - stage 0</li>
           </ul>
           <div class="cv-section-title-wrapper">
             <span class="material-icons"> language </span>

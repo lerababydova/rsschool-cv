@@ -130,6 +130,39 @@ a {
   margin: 0;
 }
 
+.projects-item-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #202020;
+}
+
+.projects-item-link:hover {
+  text-decoration: underline;
+    color: #202020;
+}
+
+.contacts-icon-email-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #202020;
+}
+
+.contacts-icon-email-link:hover {
+  text-decoration: underline;
+    color: #202020;
+}
+
+.contacts-icon-phone-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #202020;
+}
+
+.contacts-icon-phone-link:hover {
+  text-decoration: underline;
+    color: #202020;
+}
+
 .text-info {
 }
 
@@ -157,4 +190,11 @@ a {
 
 .my-github {
   text-decoration: none;
+  color: #202020;
+  cursor: pointer;
+}
+
+.my-github:hover {
+  text-decoration: underline;
+  color: #202020;
 }
